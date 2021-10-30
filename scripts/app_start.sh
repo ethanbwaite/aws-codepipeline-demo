@@ -4,3 +4,4 @@ sudo pkill -f PM2
 sudo pm2 start --name demo serve -s build
 sudo pm2 startup
 sudo pm2 save
+sudo pm2 restart all
