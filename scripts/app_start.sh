@@ -1,3 +1,6 @@
 #!/bin/bash
 cd /home/ec2-user/server/build
-pm2 --name demo-app serve -c build
+sudo pkill -f PM2
+sudo pm2 start --name demo serve -s build
+sudo pm2 startup
+sudo pm2 save
