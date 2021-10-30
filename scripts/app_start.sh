@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/server/src
+cd /home/ec2-user/server
 npm install -g serve
 serve -s build
 pm2 startup
